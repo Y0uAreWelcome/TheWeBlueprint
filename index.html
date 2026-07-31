@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Web Blueprint — Websites for Local Businesses That Never Sit Still</title>
+<meta name="description" content="The Web Blueprint builds fast, modern websites for local businesses and handles all the hosting, security, and updates — so you never touch tech again." />
+
+<!-- Tailwind CSS (precompiled for production — see tailwind.config.js) -->
+<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-x-0{left:0;right:0}.-bottom-6{bottom:-1.5rem}.-left-6{left:-1.5rem}.-top-3{top:-.75rem}.left-8{left:2rem}.left-\[8\%\]{left:8%}.right-\[8\%\]{right:8%}.top-0{top:0}.top-8{top:2rem}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1\.5{margin-bottom:.375rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.ml-1{margin-left:.25rem}.ml-3{margin-left:.75rem}.ml-auto{margin-left:auto}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-14{margin-top:3.5rem}.mt-16{margin-top:4rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.mt-8{margin-top:2rem}.mt-9{margin-top:2.25rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-0\.5{height:.125rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.min-h-screen{min-height:100vh}.w-1\/2{width:50%}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-2\/3{width:66.666667%}.w-20{width:5rem}.w-24{width:6rem}.w-4\/5{width:80%}.w-5{width:1.25rem}.w-5\/6{width:83.333333%}.w-6{width:1.5rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-10{gap:2.5rem}.gap-14{gap:3.5rem}.gap-16{gap:4rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.-space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(-.5rem*var(--tw-space-x-reverse));margin-left:calc(-.5rem*(1 - var(--tw-space-x-reverse)))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208/var(--tw-border-opacity,1))}.border-emerald-500\/20{border-color:rgba(15,174,123,.2)}.border-emerald-500\/30{border-color:rgba(15,174,123,.3)}.border-navy,.border-navy-800{--tw-border-opacity:1;border-color:rgb(11 30 61/var(--tw-border-opacity,1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.border-white\/25{border-color:hsla(0,0%,100%,.25)}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235/var(--tw-bg-opacity,1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(34 201 154/var(--tw-bg-opacity,1))}.bg-emerald-400\/40{background-color:rgba(34,201,154,.4)}.bg-emerald-400\/70{background-color:rgba(34,201,154,.7)}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(231 249 241/var(--tw-bg-opacity,1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(15 174 123/var(--tw-bg-opacity,1))}.bg-emerald-500\/10{background-color:rgba(15,174,123,.1)}.bg-emerald-500\/20{background-color:rgba(15,174,123,.2)}.bg-navy-100{--tw-bg-opacity:1;background-color:rgb(217 225 238/var(--tw-bg-opacity,1))}.bg-navy-50{--tw-bg-opacity:1;background-color:rgb(238 242 248/var(--tw-bg-opacity,1))}.bg-navy-700{--tw-bg-opacity:1;background-color:rgb(16 37 68/var(--tw-bg-opacity,1))}.bg-navy-700\/60{background-color:rgba(16,37,68,.6)}.bg-navy-800{--tw-bg-opacity:1;background-color:rgb(11 30 61/var(--tw-bg-opacity,1))}.bg-navy-900{--tw-bg-opacity:1;background-color:rgb(8 21 48/var(--tw-bg-opacity,1))}.bg-navy\/90{background-color:rgba(11,30,61,.9)}.bg-orange-50{--tw-bg-opacity:1;background-color:rgb(255 247 237/var(--tw-bg-opacity,1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.bg-sand{--tw-bg-opacity:1;background-color:rgb(247 249 251/var(--tw-bg-opacity,1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.bg-slate-200\/80{background-color:rgba(226,232,240,.8)}.bg-slate-400{--tw-bg-opacity:1;background-color:rgb(148 163 184/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/95{background-color:hsla(0,0%,100%,.95)}.p-2{padding:.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.p-8{padding:2rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-24{padding-bottom:6rem}.pb-8{padding-bottom:2rem}.pt-16{padding-top:4rem}.pt-32{padding-top:8rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.font-display{font-family:Sora,sans-serif}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.normal-case{text-transform:none}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-widest{letter-spacing:.1em}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(34 201 154/var(--tw-text-opacity,1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(15 174 123/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(11 143 101/var(--tw-text-opacity,1))}.text-navy-700{--tw-text-opacity:1;color:rgb(16 37 68/var(--tw-text-opacity,1))}.text-navy-800{--tw-text-opacity:1;color:rgb(11 30 61/var(--tw-text-opacity,1))}.text-navy-900{--tw-text-opacity:1;color:rgb(8 21 48/var(--tw-text-opacity,1))}.text-orange-500{--tw-text-opacity:1;color:rgb(249 115 22/var(--tw-text-opacity,1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-white\/30{color:hsla(0,0%,100%,.3)}.text-white\/40{color:hsla(0,0%,100%,.4)}.text-white\/50{color:hsla(0,0%,100%,.5)}.text-white\/60{color:hsla(0,0%,100%,.6)}.text-white\/70{color:hsla(0,0%,100%,.7)}.text-white\/80{color:hsla(0,0%,100%,.8)}.text-white\/85{color:hsla(0,0%,100%,.85)}.text-white\/90{color:hsla(0,0%,100%,.9)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0_12px_30px_-8px_rgba\(15\2c 174\2c 123\2c 0\.7\)\]{--tw-shadow:0 12px 30px -8px rgba(15,174,123,.7);--tw-shadow-colored:0 12px 30px -8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_4px_14px_-4px_rgba\(15\2c 174\2c 123\2c 0\.6\)\]{--tw-shadow:0 4px 14px -4px rgba(15,174,123,.6);--tw-shadow-colored:0 4px 14px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_8px_20px_-6px_rgba\(15\2c 174\2c 123\2c 0\.6\)\]{--tw-shadow:0 8px 20px -6px rgba(15,174,123,.6);--tw-shadow-colored:0 8px 20px -6px var(--tw-shadow-color)}.shadow-\[0_8px_20px_-6px_rgba\(15\2c 174\2c 123\2c 0\.6\)\],.shadow-card{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-card{--tw-shadow:0 10px 30px -10px rgba(11,30,61,.12);--tw-shadow-colored:0 10px 30px -10px var(--tw-shadow-color)}.shadow-soft{--tw-shadow:0 20px 45px -15px rgba(11,30,61,.25);--tw-shadow-colored:0 20px 45px -15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline{outline-style:solid}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.placeholder\:text-slate-400::-moz-placeholder{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.placeholder\:text-slate-400::placeholder{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-navy-800:hover{--tw-border-opacity:1;border-color:rgb(11 30 61/var(--tw-border-opacity,1))}.hover\:border-white\/50:hover{border-color:hsla(0,0%,100%,.5)}.hover\:bg-emerald-600:hover{--tw-bg-opacity:1;background-color:rgb(11 143 101/var(--tw-bg-opacity,1))}.hover\:bg-navy-800:hover{--tw-bg-opacity:1;background-color:rgb(11 30 61/var(--tw-bg-opacity,1))}.hover\:bg-navy-900:hover{--tw-bg-opacity:1;background-color:rgb(8 21 48/var(--tw-bg-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:text-white\/70:hover{color:hsla(0,0%,100%,.7)}.hover\:underline:hover{text-decoration-line:underline}.focus\:border-emerald-500:focus{--tw-border-opacity:1;border-color:rgb(15 174 123/var(--tw-border-opacity,1))}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-emerald-100:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(209 250 229/var(--tw-ring-opacity,1))}@media (min-width:640px){.sm\:flex{display:flex}.sm\:inline-flex{display:inline-flex}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:p-10{padding:2.5rem}.sm\:p-8{padding:2rem}.sm\:p-9{padding:2.25rem}.sm\:text-right{text-align:right}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width:768px){.md\:mx-0{margin-left:0;margin-right:0}.md\:block{display:block}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:gap-6{gap:1.5rem}.md\:text-left{text-align:left}}@media (min-width:1024px){.lg\:inline-flex{display:inline-flex}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:pb-32{padding-bottom:8rem}.lg\:pt-40{padding-top:10rem}.lg\:text-\[3\.4rem\]{font-size:3.4rem}}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  h1, h2, h3, .font-display { font-family: 'Sora', sans-serif; }
+
+  .grain-bg {
+    background-color: #0B1E3D;
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(15,174,123,0.18) 0%, transparent 40%),
+      radial-gradient(circle at 85% 0%, rgba(15,174,123,0.10) 0%, transparent 45%);
+  }
+
+  .dotted-line {
+    background-image: linear-gradient(to right, #C9D4E3 50%, transparent 50%);
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+  }
+
+  .browser-chrome {
+    box-shadow: 0 25px 60px -20px rgba(11,30,61,0.45);
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up { opacity: 1; transform: none; transition: none; }
+  }
+
+  .skeleton-line { background: linear-gradient(90deg, #E2E8F0 25%, #EDF1F5 37%, #E2E8F0 63%); background-size: 400% 100%; animation: shimmer 2.2s infinite; }
+  @keyframes shimmer { 0% { background-position: 100% 0; } 100% { background-position: 0 0; } }
+
+  input:focus, textarea:focus { outline: none; }
+</style>
+</head>
+
+<body class="bg-sand text-navy-900 antialiased">
+
+<!-- ============ NAV ============ -->
+<header class="fixed top-0 inset-x-0 z-50 bg-navy/90 backdrop-blur border-b border-white/10">
+  <nav class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2 font-display font-bold text-lg text-white tracking-tight">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+      The Web Blueprint
+    </a>
+
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
+      <a href="#problem" class="hover:text-white transition-colors">Why Sites Fail</a>
+      <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+      <a href="how-it-works.html" class="hover:text-white transition-colors">Hosting &amp; Security</a>
+      <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+      <a href="#testimonials" class="hover:text-white transition-colors">Reviews</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a href="portal.html" class="hidden lg:inline-flex items-center text-white/70 hover:text-white text-sm font-medium transition-colors">
+        Client Login
+      </a>
+      <a href="#contact" class="hidden sm:inline-flex items-center rounded-full bg-emerald-500 hover:bg-emerald-600 text-navy-900 font-semibold text-sm px-5 py-2.5 transition-colors shadow-[0_8px_20px_-6px_rgba(15,174,123,0.6)]">
+        Get Started
+      </a>
+      <button id="menuBtn" aria-label="Open menu" class="md:hidden text-white p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-navy-700 border-t border-white/10 px-6 py-4 space-y-4 text-white/90 text-sm font-medium">
+    <a href="#problem" class="block">Why Sites Fail</a>
+    <a href="#how-it-works" class="block">How It Works</a>
+    <a href="how-it-works.html" class="block">Hosting &amp; Security</a>
+    <a href="#pricing" class="block">Pricing</a>
+    <a href="#testimonials" class="block">Reviews</a>
+    <a href="portal.html" class="block">Client Login</a>
+    <a href="#contact" class="block rounded-full bg-emerald-500 text-navy-900 font-semibold text-center py-2.5">Get Started</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="grain-bg pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+
+    <div>
+      <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-1.5">
+        Built for local businesses
+      </span>
+
+      <h1 class="font-display font-extrabold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.1] mt-6">
+        Get found. Get called.<br>
+        Get more customers — <span class="text-emerald-400">without touching a website yourself.</span>
+      </h1>
+
+      <p class="text-white/70 text-lg mt-6 max-w-xl leading-relaxed">
+        The Web Blueprint builds fast, modern websites for local businesses like yours — live in days, not months —
+        then handles every update, security patch, and hosting bill for good. You run the business. We run the website.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 mt-9">
+        <a href="#contact" class="inline-flex justify-center items-center rounded-full bg-emerald-500 hover:bg-emerald-600 text-navy-900 font-semibold px-7 py-3.5 transition-colors shadow-[0_12px_30px_-8px_rgba(15,174,123,0.7)]">
+          Claim Your Free Mockup
+        </a>
+        <a href="#how-it-works" class="inline-flex justify-center items-center rounded-full border border-white/25 hover:border-white/50 text-white font-semibold px-7 py-3.5 transition-colors">
+          See How It Works
+        </a>
+      </div>
+
+      <div class="flex items-center gap-6 mt-10 text-white/60 text-sm">
+        <div class="flex -space-x-2">
+          <div class="w-8 h-8 rounded-full bg-emerald-400 border-2 border-navy flex items-center justify-center text-[10px] font-bold text-navy-900">JM</div>
+          <div class="w-8 h-8 rounded-full bg-navy-100 border-2 border-navy flex items-center justify-center text-[10px] font-bold text-navy-900">RT</div>
+          <div class="w-8 h-8 rounded-full bg-white border-2 border-navy flex items-center justify-center text-[10px] font-bold text-navy-900">AL</div>
+        </div>
+        <p>Trusted by 60+ local businesses across the region</p>
+      </div>
+    </div>
+
+    <!-- Signature visual: before / after browser comparison -->
+    <div class="relative">
+      <div class="relative bg-navy-700/60 border border-white/10 rounded-3xl p-6 sm:p-8">
+        <p class="text-white/50 text-xs font-semibold uppercase tracking-widest mb-5">Same business. Two websites.</p>
+
+        <div class="space-y-5">
+          <!-- Old site card -->
+          <div class="browser-chrome rounded-xl overflow-hidden bg-white/95">
+            <div class="flex items-center gap-1.5 px-3 py-2 bg-slate-200/80">
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+              <span class="ml-3 text-[10px] text-slate-500 font-mono">yourbusiness-old.com</span>
+              <span class="ml-auto text-[10px] font-semibold text-red-500 bg-red-50 rounded px-2 py-0.5">Loading… 6.2s</span>
+            </div>
+            <div class="p-4 space-y-2">
+              <div class="skeleton-line h-3 w-2/3 rounded"></div>
+              <div class="skeleton-line h-2.5 w-full rounded"></div>
+              <div class="skeleton-line h-2.5 w-5/6 rounded"></div>
+              <div class="h-14 rounded bg-slate-100 border border-dashed border-slate-300 flex items-center justify-center text-[10px] text-slate-400 mt-2">Broken image</div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <span class="text-white/40 text-xs font-medium">becomes</span>
+          </div>
+
+          <!-- New site card -->
+          <div class="browser-chrome rounded-xl overflow-hidden bg-white">
+            <div class="flex items-center gap-1.5 px-3 py-2 bg-navy-800">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400/70"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400/40"></span>
+              <span class="ml-3 text-[10px] text-white/70 font-mono">yourbusiness.com</span>
+              <span class="ml-auto text-[10px] font-semibold text-emerald-600 bg-emerald-50 rounded px-2 py-0.5">Loads in 0.8s</span>
+            </div>
+            <div class="p-4">
+              <div class="h-3 w-1/2 rounded bg-navy-800 mb-2"></div>
+              <div class="h-2 w-full rounded bg-slate-200 mb-1.5"></div>
+              <div class="h-2 w-4/5 rounded bg-slate-200 mb-3"></div>
+              <div class="flex gap-2">
+                <div class="h-7 w-24 rounded-full bg-emerald-500"></div>
+                <div class="h-7 w-20 rounded-full border border-slate-200"></div>
+              </div>
+              <div class="grid grid-cols-3 gap-2 mt-3">
+                <div class="h-10 rounded bg-navy-50"></div>
+                <div class="h-10 rounded bg-emerald-50"></div>
+                <div class="h-10 rounded bg-navy-50"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute -bottom-6 -left-6 hidden sm:flex items-center gap-3 bg-white rounded-2xl shadow-soft px-4 py-3">
+        <div class="w-9 h-9 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-navy-900">7x faster load time</p>
+          <p class="text-[11px] text-slate-500">Average across The Web Blueprint builds</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section id="problem" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl fade-up">
+      <span class="text-xs font-semibold uppercase tracking-widest text-emerald-600">The problem</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-navy-900 mt-3 leading-tight">
+        Most local business websites are quietly losing you customers
+      </h2>
+      <p class="text-slate-600 mt-4 text-lg leading-relaxed">
+        People decide whether to call you in about 3 seconds. If your site is slow, outdated, or doesn't exist,
+        they don't wait around — they scroll to the next business on Google.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-14">
+      <div class="fade-up bg-sand rounded-2xl p-6 border border-slate-100">
+        <div class="w-11 h-11 rounded-xl bg-red-50 flex items-center justify-center text-red-500 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy-900">Too slow to load</h3>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Over half of visitors abandon a site that takes more than 3 seconds to load — and never come back.</p>
+      </div>
+
+      <div class="fade-up bg-sand rounded-2xl p-6 border border-slate-100">
+        <div class="w-11 h-11 rounded-xl bg-amber-50 flex items-center justify-center text-amber-500 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy-900">Stuck in 2014</h3>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">An outdated design tells customers you might be outdated too — even if your business is thriving.</p>
+      </div>
+
+      <div class="fade-up bg-sand rounded-2xl p-6 border border-slate-100">
+        <div class="w-11 h-11 rounded-xl bg-orange-50 flex items-center justify-center text-orange-500 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536M9 11l6.586-6.586a2 2 0 112.828 2.828L11.828 13.83a4 4 0 01-1.414.94l-3.09 1.03 1.03-3.09a4 4 0 01.94-1.414z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy-900">A nightmare to update</h3>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">New hours, new prices, new photos — but the freelancer who built it is long gone.</p>
+      </div>
+
+      <div class="fade-up bg-sand rounded-2xl p-6 border border-slate-100">
+        <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center text-navy-700 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy-900">Invisible on Google</h3>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">No mobile optimization, no local SEO — so nearby customers searching for you find your competitor instead.</p>
+      </div>
+    </div>
+
+    <div class="fade-up mt-12 flex items-center gap-4 bg-navy-800 rounded-2xl px-6 py-5">
+      <div class="w-10 h-10 shrink-0 rounded-full bg-emerald-500/20 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <p class="text-white/85 text-sm sm:text-base">
+        Meanwhile, the competitor down the street with a fast, modern site is capturing the calls and bookings you're missing — every single day.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="how-it-works" class="py-24 bg-sand">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl fade-up">
+      <span class="text-xs font-semibold uppercase tracking-widest text-emerald-600">How it works</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-navy-900 mt-3 leading-tight">
+        From outdated to unstoppable in three steps
+      </h2>
+      <p class="text-slate-600 mt-4 text-lg leading-relaxed">
+        No months-long build. No confusing tech to manage. Just a fast, guided process from first draft to a site that runs itself.
+      </p>
+    </div>
+
+    <div class="relative mt-16">
+      <div class="hidden md:block absolute top-8 left-[8%] right-[8%] dotted-line h-0.5"></div>
+
+      <div class="grid md:grid-cols-3 gap-10 md:gap-6 relative">
+        <div class="fade-up text-center md:text-left">
+          <div class="w-16 h-16 rounded-2xl bg-navy-800 text-white flex items-center justify-center font-display font-bold text-xl mx-auto md:mx-0 relative z-10">01</div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mt-5">We draft it</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Tell us about your business and we design a custom draft site — built around your brand, your services, and what your customers search for. Ready in 48 hours, no upfront cost.
+          </p>
+        </div>
+
+        <div class="fade-up text-center md:text-left">
+          <div class="w-16 h-16 rounded-2xl bg-navy-800 text-white flex items-center justify-center font-display font-bold text-xl mx-auto md:mx-0 relative z-10">02</div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mt-5">You review, we launch</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Request changes until it's exactly right, then we launch it on your domain — fast. Most sites go live within days, not months.
+          </p>
+        </div>
+
+        <div class="fade-up text-center md:text-left">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-500 text-navy-900 flex items-center justify-center font-display font-bold text-xl mx-auto md:mx-0 relative z-10">03</div>
+          <h3 class="font-display font-semibold text-lg text-navy-900 mt-5">We maintain it, forever</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Updates, security patches, backups, and hosting — all handled in the background. You never think about your website again. It just works.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-up mt-14 flex flex-col sm:flex-row items-center justify-between gap-4 bg-sand border border-slate-200 rounded-2xl px-6 py-5">
+      <p class="text-sm text-slate-600">
+        Curious what "we handle your hosting" actually involves under the hood?
+      </p>
+      <a href="how-it-works.html" class="inline-flex items-center gap-1.5 rounded-full border-2 border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white font-semibold text-sm px-5 py-2.5 transition-colors whitespace-nowrap">
+        See the infrastructure ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center fade-up">
+      <span class="text-xs font-semibold uppercase tracking-widest text-emerald-600">Pricing</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-navy-900 mt-3 leading-tight">
+        Two ways to get a website that works as hard as you do
+      </h2>
+      <p class="text-slate-600 mt-4 text-lg leading-relaxed">
+        Whether you'd rather pay monthly or own it outright, both plans include a custom design built specifically for your business.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8 mt-14 items-stretch">
+
+      <!-- WaaS -->
+      <div class="fade-up relative rounded-3xl bg-navy-800 text-white p-8 sm:p-10 shadow-soft flex flex-col">
+        <span class="absolute -top-3 left-8 bg-emerald-500 text-navy-900 text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Most popular</span>
+        <h3 class="font-display font-bold text-2xl mt-3">Website-as-a-Service</h3>
+        <p class="text-white/60 text-sm mt-1">Design, hosting, and updates — one simple monthly plan.</p>
+
+        <div class="mt-6 flex items-baseline gap-1">
+          <span class="font-display font-extrabold text-4xl">$149</span>
+          <span class="text-white/60 text-sm">/month</span>
+        </div>
+        <p class="text-white/50 text-xs mt-1">No long-term contract. No upfront design fee.</p>
+
+        <ul class="mt-7 space-y-3 text-sm flex-1">
+          <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Custom-designed site built for your business</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Fast, secure hosting included</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Unlimited content updates — just ask</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Ongoing security patches & backups</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Cancel anytime, no penalties</li>
+        </ul>
+
+        <a href="#contact" class="mt-8 inline-flex justify-center items-center rounded-full bg-emerald-500 hover:bg-emerald-600 text-navy-900 font-semibold px-6 py-3 transition-colors">
+          Start With No Upfront Cost
+        </a>
+      </div>
+
+      <!-- One-time -->
+      <div class="fade-up rounded-3xl bg-sand border border-slate-200 p-8 sm:p-10 flex flex-col">
+        <h3 class="font-display font-bold text-2xl text-navy-900 mt-3">One-Time Build</h3>
+        <p class="text-slate-500 text-sm mt-1">Pay once, own your site outright.</p>
+
+        <div class="mt-6 flex items-baseline gap-1">
+          <span class="font-display font-extrabold text-4xl text-navy-900">$1,900</span>
+          <span class="text-slate-500 text-sm">one-time</span>
+        </div>
+        <p class="text-slate-400 text-xs mt-1">Optional care plan available afterward.</p>
+
+        <ul class="mt-7 space-y-3 text-sm flex-1 text-navy-900">
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">✓</span> Fully custom site, yours to keep</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">✓</span> Launch-ready in as little as one week</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">✓</span> 30 days of complimentary support post-launch</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">✓</span> Optional Care Plan: hosting, updates & security from $49/mo</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">✓</span> No recurring commitment required</li>
+        </ul>
+
+        <a href="#contact" class="mt-8 inline-flex justify-center items-center rounded-full border-2 border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white font-semibold px-6 py-3 transition-colors">
+          Get a Flat-Rate Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="py-24 bg-sand">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl fade-up">
+      <span class="text-xs font-semibold uppercase tracking-widest text-emerald-600">Social proof</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-navy-900 mt-3 leading-tight">
+        Local business owners, real results
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+      <div class="fade-up bg-white rounded-2xl p-7 border border-slate-100 shadow-card flex flex-col">
+        <div class="flex gap-1 text-emerald-500 mb-4">★★★★★</div>
+        <p class="text-slate-700 text-sm leading-relaxed flex-1">
+          "We went from no website to booked out two weeks in advance. The Web Blueprint handled everything — I didn't have to learn a thing."
+        </p>
+        <div class="flex items-center gap-3 mt-6">
+          <div class="w-10 h-10 rounded-full bg-navy-800 text-white flex items-center justify-center text-xs font-bold">JM</div>
+          <div>
+            <p class="text-sm font-semibold text-navy-900">Jenna M.</p>
+            <p class="text-xs text-slate-500">Owner, Bloom & Co. Florals</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up bg-white rounded-2xl p-7 border border-slate-100 shadow-card flex flex-col">
+        <div class="flex gap-1 text-emerald-500 mb-4">★★★★★</div>
+        <p class="text-slate-700 text-sm leading-relaxed flex-1">
+          "Our old site hadn't been touched since 2016. The new one loads instantly and actually shows up when people search for us."
+        </p>
+        <div class="flex items-center gap-3 mt-6">
+          <div class="w-10 h-10 rounded-full bg-emerald-500 text-navy-900 flex items-center justify-center text-xs font-bold">RT</div>
+          <div>
+            <p class="text-sm font-semibold text-navy-900">Ray T.</p>
+            <p class="text-xs text-slate-500">Owner, Torres Auto Repair</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up bg-white rounded-2xl p-7 border border-slate-100 shadow-card flex flex-col">
+        <div class="flex gap-1 text-emerald-500 mb-4">★★★★★</div>
+        <p class="text-slate-700 text-sm leading-relaxed flex-1">
+          "I used to dread calling a freelancer for every small update. Now I just message The Web Blueprint and it's done same day."
+        </p>
+        <div class="flex items-center gap-3 mt-6">
+          <div class="w-10 h-10 rounded-full bg-navy-100 text-navy-900 flex items-center justify-center text-xs font-bold">AL</div>
+          <div>
+            <p class="text-sm font-semibold text-navy-900">Amara L.</p>
+            <p class="text-xs text-slate-500">Owner, Amara's Skin Studio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / LEAD FORM ============ -->
+<section id="contact" class="py-24 grain-bg">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+
+    <div class="fade-up">
+      <span class="text-xs font-semibold uppercase tracking-widest text-emerald-400">Get started</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mt-3 leading-tight">
+        Claim your free mockup — see your new site before you commit to anything
+      </h2>
+      <p class="text-white/70 mt-4 text-lg leading-relaxed">
+        Tell us a bit about your business and we'll send over a custom draft, no cost and no obligation.
+        Most owners hear back from us within one business day.
+      </p>
+
+      <ul class="mt-8 space-y-4 text-white/80 text-sm">
+        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> No upfront cost to see your mockup</li>
+        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> No pressure, no obligation to move forward</li>
+        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Response within one business day</li>
+      </ul>
+    </div>
+
+    <form class="fade-up bg-white rounded-3xl p-7 sm:p-9 shadow-soft" onsubmit="event.preventDefault(); this.reset(); alert('Thanks! We\'ll be in touch within one business day.');">
+      <div class="space-y-5">
+        <div>
+          <label for="businessName" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Business name</label>
+          <input id="businessName" type="text" required placeholder="e.g. Torres Auto Repair"
+            class="w-full rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400" />
+        </div>
+
+        <div>
+          <label for="ownerName" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Owner name</label>
+          <input id="ownerName" type="text" required placeholder="e.g. Ray Torres"
+            class="w-full rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400" />
+        </div>
+
+        <div>
+          <label for="phone" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Phone number</label>
+          <input id="phone" type="tel" required placeholder="(555) 123-4567"
+            class="w-full rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400" />
+        </div>
+
+        <div>
+          <label for="currentSite" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Current website <span class="normal-case font-normal text-slate-400">(if you have one)</span></label>
+          <input id="currentSite" type="text" placeholder="www.yourbusiness.com"
+            class="w-full rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400" />
+        </div>
+
+        <button type="submit" class="w-full rounded-full bg-emerald-500 hover:bg-emerald-600 text-navy-900 font-semibold px-6 py-3.5 transition-colors">
+          Claim Your Free Mockup
+        </button>
+        <p class="text-center text-xs text-slate-400">No spam. No obligation. Just a look at what's possible.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-900 border-t border-white/10 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <a href="#top" class="flex items-center gap-2 font-display font-bold text-lg text-white">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+          The Web Blueprint
+        </a>
+        <p class="text-white/50 text-sm mt-4 leading-relaxed">
+          Fast, modern websites for local businesses — built, launched, and maintained so you never have to think about the tech.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-white text-sm font-semibold uppercase tracking-wide mb-4">Company</h4>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="#problem" class="hover:text-white transition-colors">Why Sites Fail</a></li>
+          <li><a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a></li>
+          <li><a href="how-it-works.html" class="hover:text-white transition-colors">Hosting &amp; Security</a></li>
+          <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="#testimonials" class="hover:text-white transition-colors">Reviews</a></li>
+          <li><a href="portal.html" class="hover:text-white transition-colors">Client Portal</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white text-sm font-semibold uppercase tracking-wide mb-4">Legal</h4>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white text-sm font-semibold uppercase tracking-wide mb-4">Contact</h4>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li>theweblueprint.support@proton.me</li>
+          <li>(555) 010-2040</li>
+          <li>Mon–Fri, 9am–6pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-white/40 text-xs">© 2026 The Web Blueprint. All rights reserved.</p>
+      <p class="text-white/30 text-xs max-w-xl text-center sm:text-right">
+        Results, timelines, and pricing referenced above are illustrative and may vary by project scope. The Web Blueprint is an independent web design and hosting provider and is not affiliated with any search engine or platform mentioned.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

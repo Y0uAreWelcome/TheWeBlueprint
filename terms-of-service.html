@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms of Service — The Web Blueprint</title>
+<meta name="description" content="The terms that govern use of the The Web Blueprint website, client portal, and web design and hosting services." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #0B1E3D;
+    --navy-700: #102544;
+    --navy-800: #0B1E3D;
+    --navy-900: #081530;
+    --emerald: #0FAE7B;
+    --emerald-light: #22C99A;
+    --emerald-dark: #0B8F65;
+    --ink: #0F172A;
+    --slate: #475569;
+    --slate-light: #94A3B8;
+    --sand: #F7F9FB;
+    --line: #E2E8F0;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--sand);
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, .font-display { font-family: 'Sora', sans-serif; }
+
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+  .wrap-wide { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  /* NAV */
+  nav.top {
+    background: var(--navy);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  nav.top .wrap-wide { display: flex; align-items: center; justify-content: space-between; }
+  .logo {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px; color: white;
+    text-decoration: none;
+  }
+  .logo .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--emerald); display: inline-block; }
+  nav.top a.cta {
+    background: var(--emerald);
+    color: var(--navy-900);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 9px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  nav.top a.nav-link {
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  nav.top a.nav-link:hover { color: #fff; }
+  @media (max-width: 640px) {
+    nav.top a.nav-link { display: none; }
+  }
+
+  /* HERO */
+  header.hero {
+    background: var(--navy);
+    padding: 56px 0 64px;
+    color: white;
+  }
+  header.hero .eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--emerald-light);
+    background: rgba(15,174,123,0.12);
+    border: 1px solid rgba(15,174,123,0.35);
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+  }
+  header.hero h1 {
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 12px;
+  }
+  header.hero p.lead {
+    color: rgba(255,255,255,0.65);
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /* CONTENT */
+  .legal-content { padding: 56px 0 80px; }
+  .legal-content .card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px -10px rgba(11,30,61,0.08);
+  }
+  @media (max-width: 640px) { .legal-content .card { padding: 28px 22px; } }
+
+  .legal-content h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 36px 0 12px;
+  }
+  .legal-content h2:first-child { margin-top: 0; }
+  .legal-content p {
+    color: var(--slate);
+    font-size: 0.96rem;
+    margin: 0 0 14px;
+  }
+  .legal-content ul {
+    color: var(--slate);
+    font-size: 0.96rem;
+    margin: 0 0 14px;
+    padding-left: 20px;
+  }
+  .legal-content li { margin-bottom: 8px; }
+  .legal-content strong { color: var(--ink); }
+  .legal-content a { color: var(--emerald-dark); font-weight: 600; text-decoration: none; }
+  .legal-content a:hover { text-decoration: underline; }
+
+  .updated-badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--slate-light);
+    margin-bottom: 28px;
+  }
+
+  footer.site-footer {
+    background: var(--navy-900);
+    color: rgba(255,255,255,0.4);
+    padding: 48px 24px 28px;
+  }
+  footer.site-footer .foot-cols {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px;
+  }
+  footer.site-footer h4 {
+    color: #fff; font-size: 13px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; margin: 0 0 12px;
+  }
+  footer.site-footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+  footer.site-footer a { color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none; }
+  footer.site-footer a:hover { color: rgba(255,255,255,0.9); }
+  footer.site-footer .foot-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 32px; padding-top: 20px; text-align: center;
+  }
+  footer.site-footer .foot-bottom p { font-size: 12px; margin: 0; }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap-wide">
+    <a href="index.html" class="logo"><span class="dot"></span>The Web Blueprint</a>
+    <div style="display:flex; align-items:center; gap:22px;">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="how-it-works.html" class="nav-link">How It Works</a>
+      <a href="portal.html" class="nav-link">Client Login</a>
+      <a href="index.html#contact" class="cta">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Legal</span>
+    <h1>Terms of Service</h1>
+    <p class="lead">The terms that apply when you use the The Web Blueprint website, client portal, or our web design and hosting services.</p>
+  </div>
+</header>
+
+<div class="legal-content">
+  <div class="wrap">
+    <div class="card">
+      <span class="updated-badge">Last updated: July 31, 2026</span>
+
+      <h2>1. Agreement to terms</h2>
+      <p>These Terms of Service ("Terms") govern your use of the The Web Blueprint website, the client portal, and our web design, hosting, and maintenance services (collectively, the "Services"). By using our Services, submitting a mockup request, or engaging The Web Blueprint as a client, you agree to these Terms.</p>
+
+      <h2>2. Our services</h2>
+      <p>The Web Blueprint designs and builds websites for local businesses and offers two general engagement models: a monthly Website-as-a-Service plan covering design, hosting, and ongoing updates, and a one-time build with an optional care plan afterward. Specific deliverables, pricing, and timelines for your project will be confirmed separately before work begins.</p>
+
+      <h2>3. Mockups and quotes</h2>
+      <p>Free mockups and quotes are provided as a preview of what we could build and do not obligate you to move forward. Mockups are illustrative drafts and may differ from the final delivered site.</p>
+
+      <h2>4. Client responsibilities</h2>
+      <p>As a client, you agree to:</p>
+      <ul>
+        <li>Provide accurate business information, content, and images needed to build and maintain your site</li>
+        <li>Have the rights to use any content, images, logos, or trademarks you provide to us</li>
+        <li>Keep your client portal and billing information current</li>
+        <li>Review requested changes for accuracy before they go live</li>
+      </ul>
+
+      <h2>5. Payments and billing</h2>
+      <p>Website-as-a-Service plans are billed monthly and may be canceled at any time without penalty; access to hosting and updates ends at the close of the current billing period. One-time builds are invoiced according to the payment schedule agreed to at the start of your project. Late or failed payments may result in a pause of services, including hosting, until payment is resolved.</p>
+
+      <h2>6. Ownership</h2>
+      <p>Your domain is registered in your own name and account — we manage it on your behalf but never hold ownership of it. For Website-as-a-Service clients, the design and code of your site are licensed for your use for as long as your plan remains active. For one-time builds, ownership of the final delivered site transfers to you upon full payment. Underlying tools, templates, and frameworks we use to build sites remain our property.</p>
+
+      <h2>7. Hosting and uptime</h2>
+      <p>We host active client sites on enterprise-grade infrastructure and monitor for issues on an ongoing basis. While we work to keep your site fast and available, we do not guarantee uninterrupted uptime, and we are not liable for outages caused by third-party infrastructure providers, domain registrars, or events outside our reasonable control.</p>
+
+      <h2>8. Content updates</h2>
+      <p>Update requests are handled through the process described in your client portal or by contacting your The Web Blueprint representative. We aim to complete routine content updates promptly, but timelines may vary with request volume and complexity.</p>
+
+      <h2>9. Cancellation and termination</h2>
+      <p>You may cancel a Website-as-a-Service plan at any time. We may suspend or terminate services for non-payment, misuse of the Services, or if content you provide is unlawful, infringing, or harmful. Upon cancellation, we'll assist with a reasonable handoff of your domain and site content.</p>
+
+      <h2>10. Limitation of liability</h2>
+      <p>To the fullest extent permitted by law, The Web Blueprint is not liable for indirect, incidental, or consequential damages arising from your use of the Services, including lost revenue or business opportunities. Our total liability for any claim relating to the Services is limited to the amount you paid us in the three months preceding the claim.</p>
+
+      <h2>11. Disclaimers</h2>
+      <p>Results, timelines, and figures referenced on our marketing site are illustrative and may vary by project scope. Services are provided "as is," and we make no guarantee of specific business outcomes, such as search ranking or customer volume, resulting from your website.</p>
+
+      <h2>12. Changes to these terms</h2>
+      <p>We may update these Terms from time to time. If we make material changes, we'll update the "Last updated" date above and, where appropriate, notify active clients directly.</p>
+
+      <h2>13. Contact us</h2>
+      <p>Questions about these Terms? Reach us at <a href="mailto:theweblueprint.support@proton.me">theweblueprint.support@proton.me</a> or (555) 010-2040, Monday–Friday, 9am–6pm.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap-wide foot-cols">
+    <div style="max-width:280px;">
+      <a href="index.html" class="logo" style="margin-bottom:10px;"><span class="dot"></span>The Web Blueprint</a>
+      <p style="color:rgba(255,255,255,0.4); font-size:13px; line-height:1.6; margin-top:10px;">Fast, modern websites for local businesses — built, launched, and maintained so you never have to think about the tech.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">Hosting &amp; Security</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="portal.html">Client Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap-wide foot-bottom">
+    <p>© 2026 The Web Blueprint. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
