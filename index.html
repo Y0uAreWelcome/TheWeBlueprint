@@ -480,31 +480,34 @@
       </ul>
     </div>
 
-    <form class="fade-up bg-white rounded-3xl p-7 sm:p-9 shadow-soft" onsubmit="event.preventDefault(); this.reset(); alert('Thanks! We\'ll be in touch within one business day.');">
+    <form action="https://formspree.io/f/mnpajroo" method="POST" class="fade-up bg-white rounded-3xl p-7 sm:p-9 shadow-soft">
       <div class="space-y-5">
         <div>
           <label for="businessName" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Business name</label>
-          <input id="businessName" type="text" required placeholder="e.g. Torres Auto Repair"
+          <input id="businessName" name="businessName" type="text" required placeholder="e.g. Torres Auto Repair"
             class="w-full rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400" />
         </div>
 
         <div>
           <label for="ownerName" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Owner name</label>
-          <input id="ownerName" type="text" required placeholder="e.g. Ray Torres"
+          <input id="ownerName" name="ownerName" type="text" required placeholder="e.g. Ray Torres"
             class="w-full rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400" />
         </div>
 
         <div>
           <label for="phone" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Phone number</label>
-          <input id="phone" type="tel" required placeholder="(555) 123-4567"
+          <input id="phone" name="phone" type="tel" required placeholder="(555) 123-4567"
             class="w-full rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400" />
         </div>
 
         <div>
           <label for="currentSite" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Current website <span class="normal-case font-normal text-slate-400">(if you have one)</span></label>
-          <input id="currentSite" type="text" placeholder="www.yourbusiness.com"
+          <input id="currentSite" name="currentSite" type="text" placeholder="www.yourbusiness.com"
             class="w-full rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400" />
         </div>
+
+        <input type="hidden" name="_subject" value="New free mockup request from The Web Blueprint website" />
+        <input type="hidden" name="_captcha" value="false" />
 
         <button type="submit" class="w-full rounded-full bg-emerald-500 hover:bg-emerald-600 text-navy-900 font-semibold px-6 py-3.5 transition-colors">
           Claim Your Free Mockup
