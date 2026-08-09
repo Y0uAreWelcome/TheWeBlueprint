@@ -480,7 +480,7 @@
       </ul>
     </div>
 
-    <form action="https://formspree.io/f/mnpajroo" method="POST" class="fade-up bg-white rounded-3xl p-7 sm:p-9 shadow-soft">
+    <form id="contact-form" action="https://formspree.io/f/mnpajroo" method="POST" class="fade-up bg-white rounded-3xl p-7 sm:p-9 shadow-soft">
       <div class="space-y-5">
         <div>
           <label for="businessName" class="block text-xs font-semibold text-navy-900 uppercase tracking-wide mb-1.5">Business name</label>
@@ -512,6 +512,9 @@
         <button type="submit" class="w-full rounded-full bg-emerald-500 hover:bg-emerald-600 text-navy-900 font-semibold px-6 py-3.5 transition-colors">
           Claim Your Free Mockup
         </button>
+        <div id="form-status" class="hidden rounded-2xl border border-emerald-200 bg-emerald-50/80 px-4 py-3 text-sm font-medium text-emerald-800 shadow-sm" aria-live="polite">
+          Thanks! We&apos;ll be in touch within one business day.
+        </div>
         <p class="text-center text-xs text-slate-400">No spam. No obligation. Just a look at what's possible.</p>
       </div>
     </form>
@@ -578,6 +581,48 @@
     mobileMenu.classList.toggle('hidden');
   });
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  const contactForm = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status');
+
+  if (contactForm && formStatus) {
+    contactForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.textContent;
+      formStatus.classList.remove('hidden', 'border-red-200', 'bg-red-50', 'text-red-700');
+      formStatus.classList.add('border-emerald-200', 'bg-emerald-50/80', 'text-emerald-800');
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: {
+            Accept: 'application/json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error('Form submission failed');
+        }
+
+        contactForm.reset();
+        formStatus.textContent = "Thanks! We'll be in touch within one business day.";
+        formStatus.classList.remove('hidden');
+      } catch (error) {
+        formStatus.textContent = 'Something went wrong. Please try again or email us directly.';
+        formStatus.classList.remove('border-emerald-200', 'bg-emerald-50', 'text-emerald-800');
+        formStatus.classList.add('border-red-200', 'bg-red-50', 'text-red-700');
+        formStatus.classList.remove('hidden');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+      }
+    });
+  }
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
